@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе - Космический энтузиаст</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0a0e27, #1a1f3a);
+            color: #ffd700;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        header, main, aside, footer {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        h1, h2, h3 {
+            color: #ffd700;
+        }
+        
+        ul, ol {
+            color: #fff;
+            line-height: 1.8;
+        }
+        
+        img {
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        form button {
+            background: #ffd700;
+            color: #0a0e27;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        form button:hover {
+            background: #ffed4e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Адиса Тыкшеева</h1>
+        <p>Космический энтузиаст и астроном-любитель</p>
+        <img src="avatar.jpg" alt="Моё фото" width="200" height="200">
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Работа с телескопом</li>
+                <li>Анализ астрономических данных</li>
+                <li>3D-моделирование космических объектов</li>
+                <li>Наблюдение за небесными телами</li>
+                <li>Фотографирование космоса</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <ol>
+                <li>Миссия Voyager - исследование внешних планет</li>
+                <li>Телескоп Hubble - фотографии далёких галактик</li>
+                <li>Марсоход Perseverance - поиск жизни на Марсе</li>
+                <li>МКС - Международная космическая станция</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Любимое созвездие</h3>
+        <p><strong>Орион</strong> - самое узнаваемое созвездие на ночном небе. 
+        Его легко найти по трём ярким звёздам, образующим пояс охотника.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Адиса Тыкшеева. Группа 932403</p>
+    </footer>
+</body>
+</html>
