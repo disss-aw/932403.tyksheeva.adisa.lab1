@@ -6,7 +6,18 @@
     <title>О себе - Космический энтузиаст</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #0a0e27, #1a1f3a);
+            /* Тёмный космический фон */
+            background-color: #0b0d17;
+            /* Три слоя звёзд разного размера и прозрачности */
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+            /* Разный размер "сетки" для каждого слоя, чтобы звёзды не повторялись */
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            /* Сдвиг слоёв относительно друг друга */
+            background-position: 0 0, 40px 60px, 130px 270px;
+            
             color: #ffd700;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -22,7 +33,22 @@
         }
         
         h1, h2, h3 {
-            color: #ffd700;
+            /* Градиент от тёмного золота к светлому и обратно */
+            background: linear-gradient(
+                to right,
+                #bf953f,
+                #fcf6ba,
+                #b38728,
+                #fbf5b7,
+                #aa771c
+            );
+            /* Обрезаем градиент по форме текста */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            /* Тень для объёма */
+            text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3);
         }
         
         ul, ol {
@@ -75,7 +101,6 @@
             <h2>Навыки</h2>
             <ul>
                 <li>Работа с телескопом</li>
-                <li>Анализ астрономических данных</li>
                 <li>3D-моделирование космических объектов</li>
                 <li>Наблюдение за небесными телами</li>
                 <li>Фотографирование космоса</li>
@@ -110,7 +135,7 @@
     </aside>
 
     <footer>
-        <p>&copy; 2024 Адиса Тыкшеева. Группа 932403</p>
+        <p>&copy; 2026 Адиса Тыкшеева. Группа 932403</p>
     </footer>
 </body>
 </html>
