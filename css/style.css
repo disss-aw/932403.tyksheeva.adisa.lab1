@@ -74,7 +74,7 @@ body::after {
 
 /* relative-контейнер для мерцающих звёздочек*/
 .stars-container {
-    position: relative; /* задаётся ещё раз и в CSS на случай отключения inline */
+    position: relative;
     height: 0;
     overflow: visible;
     pointer-events: none;
@@ -134,7 +134,6 @@ body::after {
     opacity: 0; 
 }
 
-/* наверное надо было сделать проще, но так красивее*/
 
 #projects:hover::before {
     animation: star-fly-before 1.4s ease-out forwards;
@@ -144,8 +143,7 @@ body::after {
     animation: star-fly-after 1.4s ease-out forwards;
 }
 
-/* Левая группа звёзд: серебристо-белые тона.
-   Летят далеко влево и слегка вверх/вниз — заезжают на соседние секции */
+
 @keyframes star-fly-before {
     0% {
         box-shadow:
@@ -233,7 +231,7 @@ form textarea:focus {
 /* кнопка */
 form button {
     background: var(--color-accent);
-    color: #0a0e27; /* тёмный текст на золотом фоне — хороший контраст */
+    color: #0a0e27; 
     padding: 10px 30px;
     border: none;
     border-radius: 5px;
@@ -264,11 +262,11 @@ form button:active {
 
 
 a:link {
-    color: #8ecbff; /* светло-голубой, контрастен на тёмном фоне */
+    color: #8ecbff; 
 }
 
 a:visited {
-    color: #cdb0ff; /* светло-фиолетовый — для уже посещённой ссылки */
+    color: #cdb0ff;
 }
 
 a:hover {
